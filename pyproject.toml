@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ubidangman-metricmap"
+version = "0.1.0"
+description = "把指标声明与实现逐项对照，标出名称相近但定义不同的指标"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ubidangman" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ubidangman.github.io"
+Repository = "https://github.com/ubidangman/metricmap"
+Issues = "https://github.com/ubidangman/metricmap/issues"
+
+[project.scripts]
+metricmap = "metricmap:main"
+
+[tool.setuptools]
+py-modules = ["metricmap"]
